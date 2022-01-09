@@ -1,0 +1,60 @@
+.todos {
+    .todo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        .id {
+            flex: 1 1 50px;
+        }
+        .content {
+            flex: 1 1 100%;
+        }
+        .delete {
+            cursor: pointer;
+            font-weight: 700;
+            border: none;
+            background-color: #bf3646;
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px 15px;
+        }
+    }
+    .done.todo {
+        .content {
+            text-decoration: line-through;
+            color: #a2a2a2;
+        }
+    }
+    .todo-input {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        appearance: none;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        outline: none;
+    }
+    .todo-submit {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        appearance: none;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background: none;
+        background-color: var(--contrast);
+        color: #fff;
+        margin: 15px auto;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}

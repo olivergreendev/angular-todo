@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: var(--background);
+}
+button {
+    font-family: inherit;
+}
+:root {
+    --background: #f0f1f4;
+    --todo: #fff;
+    --contrast: #727e96;
+}
