@@ -9,9 +9,9 @@
         />
         <input type="submit" value="Add Task" class="todo-submit">
     </form>
-    <div class="todo {{ (todo.completed ? 'done' : '') }}" *ngFor="let todo of todos; let i = index;">
+    <div class="todo {{ (todo.completed ? 'done' : '') }}" *ngFor="let todo of todos; let i = index;" (click)="toggleDone(i)">
         <div class="id">{{ i }}</div>
-        <div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
+        <div class="content">{{ todo.content }}</div>
         <button class="delete" (click)="deleteTodo(i)">X</button>
     </div>
 </div>
